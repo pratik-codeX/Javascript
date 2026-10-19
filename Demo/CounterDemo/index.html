@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Counter</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1{
+            color: rgb(205, 125, 50);
+        }
+
+        button{
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Counter</h1>
+    <p id="count">0</p>
+    <button id ="myButton">Click Me</button>
+
+    <script>
+        let count = 0;
+
+        const button = document.getElementById("myButton");
+        const display = document.getElementById("count");
+
+        button.addEventListener("click",function (){
+            count = count + 1;
+            display.textContent = count;
+        });
+    </script>
+</body>
+</html>
