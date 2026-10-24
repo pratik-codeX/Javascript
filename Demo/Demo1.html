@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: rgb(255, 191, 0);
+        text-align: center;
+    }
+</style>
+<body>
+    <h1>Welcome!</h1>
+    <p id="message"> I'm Learning Web application</p>
+    <button id = "changeButton">click me</button>
+    <script>
+        const button = document.getElementById("changeButton");
+        const message = document.getElementById("message");
+
+        button.addEventListener("click",()=>{
+            message.textContent = "My first JavaScript Interacation";
+        });
+    </script>
+</body>
+</html>

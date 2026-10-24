@@ -1,14 +1,17 @@
-function Greeting() {
-  return <h2>Welcome to React!</h2>;
-}
 
-function App() {
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
   return (
     <div>
-      <h1>My First App</h1>
-      <Greeting />
+      <p>{count}</p>
+      <button onClick={() => setCount(count + 1)}>
+        Increment
+      </button>
     </div>
   );
 }
 
-export default App;
+export default Counter;

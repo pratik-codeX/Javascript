@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+
+        background-color: lightyellow;
+        text-align: center;
+    }
+
+    #mainHeading{
+        text-align: center;
+        color: green;
+        
+    }
+</style>
+<body>
+    <h1 id="mainHeading">My Portfolio</h1>
+    <p id="message">Hi, I'm Pratik Raut an Web Developer</p>
+    <button id="messageChange">click me</button>
+    <script>
+        const button = document.getElementById("messageChange");
+        const message = document.getElementById("message");
+        const heading = document.getElementById("mainHeading");
+        
+        button.addEventListener("click",function(){
+            message.textContent = "Hello, I am learning";
+            heading.textContent = "Welcome to my portfolio";
+        });
+    </script>
+</body>
+</html>
